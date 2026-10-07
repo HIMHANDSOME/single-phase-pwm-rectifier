@@ -1,0 +1,22 @@
+# Publish only simulation assets and repository documentation.
+/*
+!/README.md
+!/.gitignore
+!/code/
+!/model/
+!/results/
+
+# Keep simulation MATLAB sources and utilities only.
+/code/*
+!/code/*.m
+!/code/utils/
+/code/utils/*
+!/code/utils/*.m
+
+# Ignore generated Simulink caches and editor backup files.
+slprj/
+*.slxc
+*.asv
+*.m~
+*.slx~
+*.autosave
